@@ -8,7 +8,6 @@ const Portfolio = (props) => {
 
   const getProjectsByUser = useCallback(async () => {
     const projectResponse = await axios_instance.get(`/projects/${props.user_id}`, {});
-    console.log(projectResponse);
     if (projectResponse && projectResponse.data) {
       setFolioState({...folioState, projects: projectResponse.data});
     }

@@ -57,8 +57,6 @@ const App = () => {
     getResume();
   }, [setAppState, getResume]);
 
-  console.log(appState);
-
   return (
     <div className="App">
       <Header user_id={user_id}/>

@@ -41,7 +41,6 @@ const Resume = (props) => {
 
   const getSkillsByResume = useCallback(async () => {
     const skillResponse = await axios_instance.get(`/skills/${props.resume_id}`, {});
-    console.log(skillResponse);
     if (skillResponse && skillResponse.data) {
       setSkillState({...skillState, skills: skillResponse.data});
     }

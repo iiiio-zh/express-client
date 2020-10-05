@@ -59,7 +59,7 @@ const Header = (props) => {
 
         <div className="banner-text">
           <h1 className="responsive-headline">{name}</h1>
-          <h3>{headerState.description}.</h3>
+          <h3>{headerState.description}</h3>
           <hr/>
           <ul className="social">
             <a href={headerState.project} className="button btn project-btn"><i className="fa fa-book"></i>Project</a>

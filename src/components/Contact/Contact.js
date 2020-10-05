@@ -63,7 +63,7 @@ const Contact = (props) => {
   // }
 
   const handleChange = (event) => {
-    console.log('sjsjsjsjs');
+    console.log('handleChange not implemented');
   };
 
   return (

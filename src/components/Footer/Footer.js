@@ -12,7 +12,6 @@ const Footer = (props) => {
       let social = socialResponse.data.map((network) => {
         return JSON.parse(network.details);
       })
-      console.log(social);
       setNetworkState({...networkState, social: social});
     }
   }, [props.user_id]);
